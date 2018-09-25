@@ -1,0 +1,31 @@
+{
+  "name": "upmark",
+  "version": "0.1.0",
+  "description": "Discussion markup parser. Code, quote, spoiler, url. Returns AST, you map to virtual DOM components, in browser or React Native",
+  "main": "index.dist",
+  "types": "index.dist",
+  "scripts": {
+    "format": "tsc && tslint --fix index.d.ts index.js index.test.js prepare.js && ava index.test.js",
+    "prepare": "node prepare",
+    "test": "nyc ava -v index.test.js && tsc && tslint index.d.ts index.js index.test.js prepare.js && node prepare && ava index.dist.test.js"
+  },
+  "keywords": [
+    "ast",
+    "html",
+    "markdown",
+    "parser",
+    "react-native"
+  ],
+  "author": "makepost <makepost@firemail.cc>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^13.0.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.14.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.0",
+    "typescript": "^3.0.3"
+  }
+}
