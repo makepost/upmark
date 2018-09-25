@@ -1,6 +1,6 @@
 {
   "name": "upmark",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Discussion markup parser. Code, quote, spoiler, url. Returns AST, you map to virtual DOM components, in browser or React Native",
   "main": "index.dist",
   "types": "index.dist",
