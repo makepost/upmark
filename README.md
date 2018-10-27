@@ -27,8 +27,8 @@ Parses your input and returns an AST:
 
 ```js
 [
-  { children: [">>", "", "123"], type: 2 }, 0,
-  { children: ["https://example.net/", "thread-id", "123"], type: 2 }, 0, 0,
+  { children: [">>", "", "123"], type: 1 }, 0,
+  { children: ["https://example.net/", "thread-id", "123"], type: 1 }, 0, 0,
   {
     children: [
       "Quoted spoiler: ",
@@ -39,10 +39,10 @@ Parses your input and returns an AST:
         type: 5
       }
     ],
-    type: 3
+    type: 2
   }, 0, 0,
   { children: ["Heading"], type: 6 }, 0, 0,
-  { children: ["Monospaced text,", 0, "such as code."], type: 1 }
+  { children: ["Monospaced text,", 0, "such as code."], type: 3 }
 ];
 ```
 
